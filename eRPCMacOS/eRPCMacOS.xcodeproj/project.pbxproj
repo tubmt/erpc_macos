@@ -1,0 +1,971 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A3234762BA0400F003B1C5A /* eRPCMacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3234752BA0400F003B1C5A /* eRPCMacOSApp.swift */; };
+		5A3234782BA0400F003B1C5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3234772BA0400F003B1C5A /* ContentView.swift */; };
+		5A32347A2BA04010003B1C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3234792BA04010003B1C5A /* Assets.xcassets */; };
+		5A32347D2BA04010003B1C5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A32347C2BA04010003B1C5A /* Preview Assets.xcassets */; };
+		5A3234882BA04010003B1C5A /* eRPCMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3234872BA04010003B1C5A /* eRPCMacOSTests.swift */; };
+		5A3234922BA04010003B1C5A /* eRPCMacOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3234912BA04010003B1C5A /* eRPCMacOSUITests.swift */; };
+		5A3234942BA04010003B1C5A /* eRPCMacOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3234932BA04010003B1C5A /* eRPCMacOSUITestsLaunchTests.swift */; };
+		5A3234B02BA04062003B1C5A /* eRPCTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3234AF2BA04062003B1C5A /* eRPCTrigger.swift */; };
+		5A3234BD2BA04463003B1C5A /* CPlusTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A3234BB2BA04463003B1C5A /* CPlusTest.cpp */; };
+		5A3234BE2BA04463003B1C5A /* CPlusTest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A3234BC2BA04463003B1C5A /* CPlusTest.hpp */; };
+		5A3235DE2BA051E1003B1C5A /* eRPCMacOS-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A3235DD2BA051E1003B1C5A /* eRPCMacOS-Bridging-Header.h */; };
+		5A89D0872BA15036006AD8A0 /* erpc_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0862BA15036006AD8A0 /* erpc_config.h */; };
+		5A89D0892BA1504B006AD8A0 /* erpc_framed_transport.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0882BA1504B006AD8A0 /* erpc_framed_transport.hpp */; };
+		5A89D08B2BA1505C006AD8A0 /* erpc_tcp_transport.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D08A2BA1505C006AD8A0 /* erpc_tcp_transport.hpp */; };
+		5A89D08D2BA15070006AD8A0 /* erpc_config_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D08C2BA15070006AD8A0 /* erpc_config_internal.h */; };
+		5A89D08F2BA150AA006AD8A0 /* erpc_threading.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D08E2BA150AA006AD8A0 /* erpc_threading.h */; };
+		5A89D0962BA1525C006AD8A0 /* erpc_crc16.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0952BA1525C006AD8A0 /* erpc_crc16.hpp */; };
+		5A89D0B42BA153A7006AD8A0 /* erpc_framed_transport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0992BA153A7006AD8A0 /* erpc_framed_transport.cpp */; };
+		5A89D0B52BA153A7006AD8A0 /* erpc_pre_post_action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D09A2BA153A7006AD8A0 /* erpc_pre_post_action.cpp */; };
+		5A89D0B62BA153A7006AD8A0 /* erpc_utils.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D09B2BA153A7006AD8A0 /* erpc_utils.hpp */; };
+		5A89D0B72BA153A7006AD8A0 /* erpc_message_loggers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D09C2BA153A7006AD8A0 /* erpc_message_loggers.cpp */; };
+		5A89D0B82BA153A7006AD8A0 /* erpc_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D09D2BA153A7006AD8A0 /* erpc_server.cpp */; };
+		5A89D0B92BA153A7006AD8A0 /* erpc_server.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D09E2BA153A7006AD8A0 /* erpc_server.hpp */; };
+		5A89D0BA2BA153A7006AD8A0 /* erpc_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D09F2BA153A7006AD8A0 /* erpc_utils.cpp */; };
+		5A89D0BB2BA153A7006AD8A0 /* erpc_basic_codec.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0A02BA153A7006AD8A0 /* erpc_basic_codec.hpp */; };
+		5A89D0BC2BA153A7006AD8A0 /* erpc_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0A12BA153A7006AD8A0 /* erpc_version.h */; };
+		5A89D0BD2BA153A7006AD8A0 /* erpc_codec.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0A22BA153A7006AD8A0 /* erpc_codec.hpp */; };
+		5A89D0BE2BA153A7006AD8A0 /* erpc_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0A32BA153A7006AD8A0 /* erpc_common.h */; };
+		5A89D0BF2BA153A7006AD8A0 /* erpc_transport_arbitrator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0A42BA153A7006AD8A0 /* erpc_transport_arbitrator.cpp */; };
+		5A89D0C02BA153A7006AD8A0 /* erpc_message_loggers.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0A52BA153A7006AD8A0 /* erpc_message_loggers.hpp */; };
+		5A89D0C12BA153A7006AD8A0 /* erpc_transport.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0A62BA153A7006AD8A0 /* erpc_transport.hpp */; };
+		5A89D0C22BA153A7006AD8A0 /* erpc_client_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0A72BA153A7006AD8A0 /* erpc_client_manager.h */; };
+		5A89D0C32BA153A7006AD8A0 /* erpc_crc16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0A82BA153A7006AD8A0 /* erpc_crc16.cpp */; };
+		5A89D0C42BA153A7006AD8A0 /* erpc_simple_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0A92BA153A7006AD8A0 /* erpc_simple_server.cpp */; };
+		5A89D0C52BA153A7006AD8A0 /* erpc_manually_constructed.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0AA2BA153A7006AD8A0 /* erpc_manually_constructed.hpp */; };
+		5A89D0C62BA153A7006AD8A0 /* erpc_static_queue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0AB2BA153A7006AD8A0 /* erpc_static_queue.hpp */; };
+		5A89D0C72BA153A7006AD8A0 /* erpc_transport_arbitrator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0AC2BA153A7006AD8A0 /* erpc_transport_arbitrator.hpp */; };
+		5A89D0C82BA153A7006AD8A0 /* erpc_client_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0AD2BA153A7006AD8A0 /* erpc_client_manager.cpp */; };
+		5A89D0C92BA153A7006AD8A0 /* erpc_client_server_common.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0AE2BA153A7006AD8A0 /* erpc_client_server_common.hpp */; };
+		5A89D0CA2BA153A7006AD8A0 /* erpc_pre_post_action.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0AF2BA153A7006AD8A0 /* erpc_pre_post_action.h */; };
+		5A89D0CB2BA153A7006AD8A0 /* erpc_message_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0B02BA153A7006AD8A0 /* erpc_message_buffer.cpp */; };
+		5A89D0CC2BA153A7006AD8A0 /* erpc_message_buffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0B12BA153A7006AD8A0 /* erpc_message_buffer.hpp */; };
+		5A89D0CD2BA153A7006AD8A0 /* erpc_simple_server.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0B22BA153A7006AD8A0 /* erpc_simple_server.hpp */; };
+		5A89D0CE2BA153A7006AD8A0 /* erpc_basic_codec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0B32BA153A7006AD8A0 /* erpc_basic_codec.cpp */; };
+		5A89D0D92BA153B3006AD8A0 /* erpc_endianness_undefined.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0CF2BA153B2006AD8A0 /* erpc_endianness_undefined.h */; };
+		5A89D0DA2BA153B3006AD8A0 /* erpc_threading_freertos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0D02BA153B2006AD8A0 /* erpc_threading_freertos.cpp */; };
+		5A89D0DB2BA153B3006AD8A0 /* erpc_threading_pthreads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0D12BA153B3006AD8A0 /* erpc_threading_pthreads.cpp */; };
+		5A89D0DC2BA153B3006AD8A0 /* erpc_threading_zephyr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0D22BA153B3006AD8A0 /* erpc_threading_zephyr.cpp */; };
+		5A89D0DD2BA153B3006AD8A0 /* erpc_threading_threadx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0D32BA153B3006AD8A0 /* erpc_threading_threadx.cpp */; };
+		5A89D0DE2BA153B3006AD8A0 /* erpc_endianness_agnostic_example.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0D42BA153B3006AD8A0 /* erpc_endianness_agnostic_example.h */; };
+		5A89D0DF2BA153B3006AD8A0 /* erpc_serial.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0D52BA153B3006AD8A0 /* erpc_serial.h */; };
+		5A89D0E02BA153B3006AD8A0 /* erpc_setup_extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0D62BA153B3006AD8A0 /* erpc_setup_extensions.h */; };
+		5A89D0E12BA153B3006AD8A0 /* erpc_serial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0D72BA153B3006AD8A0 /* erpc_serial.cpp */; };
+		5A89D0E22BA153B3006AD8A0 /* erpc_port.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0D82BA153B3006AD8A0 /* erpc_port.h */; };
+		5A89D0EA2BA153BB006AD8A0 /* erpc_setup_tcp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0E32BA153BB006AD8A0 /* erpc_setup_tcp.cpp */; };
+		5A89D0EB2BA153BB006AD8A0 /* erpc_server_setup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0E42BA153BB006AD8A0 /* erpc_server_setup.cpp */; };
+		5A89D0EC2BA153BB006AD8A0 /* erpc_server_setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0E52BA153BB006AD8A0 /* erpc_server_setup.h */; };
+		5A89D0ED2BA153BB006AD8A0 /* erpc_client_setup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0E62BA153BB006AD8A0 /* erpc_client_setup.cpp */; };
+		5A89D0EE2BA153BB006AD8A0 /* erpc_transport_setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0E72BA153BB006AD8A0 /* erpc_transport_setup.h */; };
+		5A89D0EF2BA153BB006AD8A0 /* erpc_mbf_setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0E82BA153BB006AD8A0 /* erpc_mbf_setup.h */; };
+		5A89D0F02BA153BB006AD8A0 /* erpc_client_setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0E92BA153BB006AD8A0 /* erpc_client_setup.h */; };
+		5A89D0F62BA153C5006AD8A0 /* erpc_serial_transport.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0F12BA153C5006AD8A0 /* erpc_serial_transport.hpp */; };
+		5A89D0F72BA153C5006AD8A0 /* erpc_tcp_transport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0F22BA153C5006AD8A0 /* erpc_tcp_transport.cpp */; };
+		5A89D0F82BA153C5006AD8A0 /* erpc_inter_thread_buffer_transport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0F32BA153C5006AD8A0 /* erpc_inter_thread_buffer_transport.cpp */; };
+		5A89D0F92BA153C5006AD8A0 /* erpc_inter_thread_buffer_transport.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A89D0F42BA153C5006AD8A0 /* erpc_inter_thread_buffer_transport.hpp */; };
+		5A89D0FA2BA153C5006AD8A0 /* erpc_serial_transport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D0F52BA153C5006AD8A0 /* erpc_serial_transport.cpp */; };
+		5A89D0FB2BA153E7006AD8A0 /* libeRPC.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3234A42BA0402E003B1C5A /* libeRPC.dylib */; };
+		5A89D0FC2BA153E7006AD8A0 /* libeRPC.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 5A3234A42BA0402E003B1C5A /* libeRPC.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A3234842BA04010003B1C5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A32346A2BA0400F003B1C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A3234712BA0400F003B1C5A;
+			remoteInfo = eRPCMacOS;
+		};
+		5A32348E2BA04010003B1C5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A32346A2BA0400F003B1C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A3234712BA0400F003B1C5A;
+			remoteInfo = eRPCMacOS;
+		};
+		5A89D0FD2BA153E7006AD8A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A32346A2BA0400F003B1C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A3234A32BA0402D003B1C5A;
+			remoteInfo = eRPC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A89D0FF2BA153E7006AD8A0 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A89D0FC2BA153E7006AD8A0 /* libeRPC.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A3234722BA0400F003B1C5A /* eRPCMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eRPCMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3234752BA0400F003B1C5A /* eRPCMacOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eRPCMacOSApp.swift; sourceTree = "<group>"; };
+		5A3234772BA0400F003B1C5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5A3234792BA04010003B1C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A32347C2BA04010003B1C5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A32347E2BA04010003B1C5A /* eRPCMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eRPCMacOS.entitlements; sourceTree = "<group>"; };
+		5A3234832BA04010003B1C5A /* eRPCMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eRPCMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3234872BA04010003B1C5A /* eRPCMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eRPCMacOSTests.swift; sourceTree = "<group>"; };
+		5A32348D2BA04010003B1C5A /* eRPCMacOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eRPCMacOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3234912BA04010003B1C5A /* eRPCMacOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eRPCMacOSUITests.swift; sourceTree = "<group>"; };
+		5A3234932BA04010003B1C5A /* eRPCMacOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eRPCMacOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5A3234A42BA0402E003B1C5A /* libeRPC.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libeRPC.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3234AF2BA04062003B1C5A /* eRPCTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eRPCTrigger.swift; sourceTree = "<group>"; };
+		5A3234BB2BA04463003B1C5A /* CPlusTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPlusTest.cpp; sourceTree = "<group>"; };
+		5A3234BC2BA04463003B1C5A /* CPlusTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CPlusTest.hpp; sourceTree = "<group>"; };
+		5A3235DD2BA051E1003B1C5A /* eRPCMacOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "eRPCMacOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A89D0862BA15036006AD8A0 /* erpc_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_config.h; path = erpc_ios/config/erpc_config.h; sourceTree = SOURCE_ROOT; };
+		5A89D0882BA1504B006AD8A0 /* erpc_framed_transport.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_framed_transport.hpp; path = erpc_ios/infra/erpc_framed_transport.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D08A2BA1505C006AD8A0 /* erpc_tcp_transport.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_tcp_transport.hpp; path = erpc_ios/transports/erpc_tcp_transport.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D08C2BA15070006AD8A0 /* erpc_config_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_config_internal.h; path = erpc_ios/port/erpc_config_internal.h; sourceTree = SOURCE_ROOT; };
+		5A89D08E2BA150AA006AD8A0 /* erpc_threading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_threading.h; path = erpc_ios/port/erpc_threading.h; sourceTree = SOURCE_ROOT; };
+		5A89D0952BA1525C006AD8A0 /* erpc_crc16.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_crc16.hpp; path = erpc_ios/infra/erpc_crc16.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D0992BA153A7006AD8A0 /* erpc_framed_transport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_framed_transport.cpp; path = erpc_ios/infra/erpc_framed_transport.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D09A2BA153A7006AD8A0 /* erpc_pre_post_action.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_pre_post_action.cpp; path = erpc_ios/infra/erpc_pre_post_action.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D09B2BA153A7006AD8A0 /* erpc_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_utils.hpp; path = erpc_ios/infra/erpc_utils.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D09C2BA153A7006AD8A0 /* erpc_message_loggers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_message_loggers.cpp; path = erpc_ios/infra/erpc_message_loggers.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D09D2BA153A7006AD8A0 /* erpc_server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_server.cpp; path = erpc_ios/infra/erpc_server.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D09E2BA153A7006AD8A0 /* erpc_server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_server.hpp; path = erpc_ios/infra/erpc_server.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D09F2BA153A7006AD8A0 /* erpc_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_utils.cpp; path = erpc_ios/infra/erpc_utils.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0A02BA153A7006AD8A0 /* erpc_basic_codec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_basic_codec.hpp; path = erpc_ios/infra/erpc_basic_codec.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D0A12BA153A7006AD8A0 /* erpc_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_version.h; path = erpc_ios/infra/erpc_version.h; sourceTree = SOURCE_ROOT; };
+		5A89D0A22BA153A7006AD8A0 /* erpc_codec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_codec.hpp; path = erpc_ios/infra/erpc_codec.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D0A32BA153A7006AD8A0 /* erpc_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_common.h; path = erpc_ios/infra/erpc_common.h; sourceTree = SOURCE_ROOT; };
+		5A89D0A42BA153A7006AD8A0 /* erpc_transport_arbitrator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_transport_arbitrator.cpp; path = erpc_ios/infra/erpc_transport_arbitrator.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0A52BA153A7006AD8A0 /* erpc_message_loggers.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_message_loggers.hpp; path = erpc_ios/infra/erpc_message_loggers.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D0A62BA153A7006AD8A0 /* erpc_transport.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_transport.hpp; path = erpc_ios/infra/erpc_transport.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D0A72BA153A7006AD8A0 /* erpc_client_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_client_manager.h; path = erpc_ios/infra/erpc_client_manager.h; sourceTree = SOURCE_ROOT; };
+		5A89D0A82BA153A7006AD8A0 /* erpc_crc16.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_crc16.cpp; path = erpc_ios/infra/erpc_crc16.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0A92BA153A7006AD8A0 /* erpc_simple_server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_simple_server.cpp; path = erpc_ios/infra/erpc_simple_server.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0AA2BA153A7006AD8A0 /* erpc_manually_constructed.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_manually_constructed.hpp; path = erpc_ios/infra/erpc_manually_constructed.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D0AB2BA153A7006AD8A0 /* erpc_static_queue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_static_queue.hpp; path = erpc_ios/infra/erpc_static_queue.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D0AC2BA153A7006AD8A0 /* erpc_transport_arbitrator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_transport_arbitrator.hpp; path = erpc_ios/infra/erpc_transport_arbitrator.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D0AD2BA153A7006AD8A0 /* erpc_client_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_client_manager.cpp; path = erpc_ios/infra/erpc_client_manager.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0AE2BA153A7006AD8A0 /* erpc_client_server_common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_client_server_common.hpp; path = erpc_ios/infra/erpc_client_server_common.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D0AF2BA153A7006AD8A0 /* erpc_pre_post_action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_pre_post_action.h; path = erpc_ios/infra/erpc_pre_post_action.h; sourceTree = SOURCE_ROOT; };
+		5A89D0B02BA153A7006AD8A0 /* erpc_message_buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_message_buffer.cpp; path = erpc_ios/infra/erpc_message_buffer.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0B12BA153A7006AD8A0 /* erpc_message_buffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_message_buffer.hpp; path = erpc_ios/infra/erpc_message_buffer.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D0B22BA153A7006AD8A0 /* erpc_simple_server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_simple_server.hpp; path = erpc_ios/infra/erpc_simple_server.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D0B32BA153A7006AD8A0 /* erpc_basic_codec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_basic_codec.cpp; path = erpc_ios/infra/erpc_basic_codec.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0CF2BA153B2006AD8A0 /* erpc_endianness_undefined.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_endianness_undefined.h; path = erpc_ios/port/erpc_endianness_undefined.h; sourceTree = SOURCE_ROOT; };
+		5A89D0D02BA153B2006AD8A0 /* erpc_threading_freertos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_threading_freertos.cpp; path = erpc_ios/port/erpc_threading_freertos.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0D12BA153B3006AD8A0 /* erpc_threading_pthreads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_threading_pthreads.cpp; path = erpc_ios/port/erpc_threading_pthreads.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0D22BA153B3006AD8A0 /* erpc_threading_zephyr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_threading_zephyr.cpp; path = erpc_ios/port/erpc_threading_zephyr.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0D32BA153B3006AD8A0 /* erpc_threading_threadx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_threading_threadx.cpp; path = erpc_ios/port/erpc_threading_threadx.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0D42BA153B3006AD8A0 /* erpc_endianness_agnostic_example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_endianness_agnostic_example.h; path = erpc_ios/port/erpc_endianness_agnostic_example.h; sourceTree = SOURCE_ROOT; };
+		5A89D0D52BA153B3006AD8A0 /* erpc_serial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_serial.h; path = erpc_ios/port/erpc_serial.h; sourceTree = SOURCE_ROOT; };
+		5A89D0D62BA153B3006AD8A0 /* erpc_setup_extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_setup_extensions.h; path = erpc_ios/port/erpc_setup_extensions.h; sourceTree = SOURCE_ROOT; };
+		5A89D0D72BA153B3006AD8A0 /* erpc_serial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_serial.cpp; path = erpc_ios/port/erpc_serial.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0D82BA153B3006AD8A0 /* erpc_port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_port.h; path = erpc_ios/port/erpc_port.h; sourceTree = SOURCE_ROOT; };
+		5A89D0E32BA153BB006AD8A0 /* erpc_setup_tcp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_setup_tcp.cpp; path = erpc_ios/setup/erpc_setup_tcp.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0E42BA153BB006AD8A0 /* erpc_server_setup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_server_setup.cpp; path = erpc_ios/setup/erpc_server_setup.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0E52BA153BB006AD8A0 /* erpc_server_setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_server_setup.h; path = erpc_ios/setup/erpc_server_setup.h; sourceTree = SOURCE_ROOT; };
+		5A89D0E62BA153BB006AD8A0 /* erpc_client_setup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_client_setup.cpp; path = erpc_ios/setup/erpc_client_setup.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0E72BA153BB006AD8A0 /* erpc_transport_setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_transport_setup.h; path = erpc_ios/setup/erpc_transport_setup.h; sourceTree = SOURCE_ROOT; };
+		5A89D0E82BA153BB006AD8A0 /* erpc_mbf_setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_mbf_setup.h; path = erpc_ios/setup/erpc_mbf_setup.h; sourceTree = SOURCE_ROOT; };
+		5A89D0E92BA153BB006AD8A0 /* erpc_client_setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = erpc_client_setup.h; path = erpc_ios/setup/erpc_client_setup.h; sourceTree = SOURCE_ROOT; };
+		5A89D0F12BA153C5006AD8A0 /* erpc_serial_transport.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_serial_transport.hpp; path = erpc_ios/transports/erpc_serial_transport.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D0F22BA153C5006AD8A0 /* erpc_tcp_transport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_tcp_transport.cpp; path = erpc_ios/transports/erpc_tcp_transport.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0F32BA153C5006AD8A0 /* erpc_inter_thread_buffer_transport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_inter_thread_buffer_transport.cpp; path = erpc_ios/transports/erpc_inter_thread_buffer_transport.cpp; sourceTree = SOURCE_ROOT; };
+		5A89D0F42BA153C5006AD8A0 /* erpc_inter_thread_buffer_transport.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = erpc_inter_thread_buffer_transport.hpp; path = erpc_ios/transports/erpc_inter_thread_buffer_transport.hpp; sourceTree = SOURCE_ROOT; };
+		5A89D0F52BA153C5006AD8A0 /* erpc_serial_transport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = erpc_serial_transport.cpp; path = erpc_ios/transports/erpc_serial_transport.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A32346F2BA0400F003B1C5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A89D0FB2BA153E7006AD8A0 /* libeRPC.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3234802BA04010003B1C5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A32348A2BA04010003B1C5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3234A22BA0402D003B1C5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A3234692BA0400F003B1C5A = {
+			isa = PBXGroup;
+			children = (
+				5A3235DD2BA051E1003B1C5A /* eRPCMacOS-Bridging-Header.h */,
+				5A3234742BA0400F003B1C5A /* eRPCMacOS */,
+				5A3234862BA04010003B1C5A /* eRPCMacOSTests */,
+				5A3234902BA04010003B1C5A /* eRPCMacOSUITests */,
+				5A3234A52BA0402E003B1C5A /* eRPC */,
+				5A3234732BA0400F003B1C5A /* Products */,
+				5A3234B22BA0414F003B1C5A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A3234732BA0400F003B1C5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A3234722BA0400F003B1C5A /* eRPCMacOS.app */,
+				5A3234832BA04010003B1C5A /* eRPCMacOSTests.xctest */,
+				5A32348D2BA04010003B1C5A /* eRPCMacOSUITests.xctest */,
+				5A3234A42BA0402E003B1C5A /* libeRPC.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A3234742BA0400F003B1C5A /* eRPCMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A3234752BA0400F003B1C5A /* eRPCMacOSApp.swift */,
+				5A3234772BA0400F003B1C5A /* ContentView.swift */,
+				5A3234792BA04010003B1C5A /* Assets.xcassets */,
+				5A32347E2BA04010003B1C5A /* eRPCMacOS.entitlements */,
+				5A32347B2BA04010003B1C5A /* Preview Content */,
+				5A3234AF2BA04062003B1C5A /* eRPCTrigger.swift */,
+			);
+			path = eRPCMacOS;
+			sourceTree = "<group>";
+		};
+		5A32347B2BA04010003B1C5A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5A32347C2BA04010003B1C5A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A3234862BA04010003B1C5A /* eRPCMacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A3234872BA04010003B1C5A /* eRPCMacOSTests.swift */,
+			);
+			path = eRPCMacOSTests;
+			sourceTree = "<group>";
+		};
+		5A3234902BA04010003B1C5A /* eRPCMacOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A3234912BA04010003B1C5A /* eRPCMacOSUITests.swift */,
+				5A3234932BA04010003B1C5A /* eRPCMacOSUITestsLaunchTests.swift */,
+			);
+			path = eRPCMacOSUITests;
+			sourceTree = "<group>";
+		};
+		5A3234A52BA0402E003B1C5A /* eRPC */ = {
+			isa = PBXGroup;
+			children = (
+				5A89D0F32BA153C5006AD8A0 /* erpc_inter_thread_buffer_transport.cpp */,
+				5A89D0F42BA153C5006AD8A0 /* erpc_inter_thread_buffer_transport.hpp */,
+				5A89D0F52BA153C5006AD8A0 /* erpc_serial_transport.cpp */,
+				5A89D0F12BA153C5006AD8A0 /* erpc_serial_transport.hpp */,
+				5A89D0F22BA153C5006AD8A0 /* erpc_tcp_transport.cpp */,
+				5A89D0E62BA153BB006AD8A0 /* erpc_client_setup.cpp */,
+				5A89D0E92BA153BB006AD8A0 /* erpc_client_setup.h */,
+				5A89D0E82BA153BB006AD8A0 /* erpc_mbf_setup.h */,
+				5A89D0E42BA153BB006AD8A0 /* erpc_server_setup.cpp */,
+				5A89D0E52BA153BB006AD8A0 /* erpc_server_setup.h */,
+				5A89D0E32BA153BB006AD8A0 /* erpc_setup_tcp.cpp */,
+				5A89D0E72BA153BB006AD8A0 /* erpc_transport_setup.h */,
+				5A89D0D42BA153B3006AD8A0 /* erpc_endianness_agnostic_example.h */,
+				5A89D0CF2BA153B2006AD8A0 /* erpc_endianness_undefined.h */,
+				5A89D0D82BA153B3006AD8A0 /* erpc_port.h */,
+				5A89D0D72BA153B3006AD8A0 /* erpc_serial.cpp */,
+				5A89D0D52BA153B3006AD8A0 /* erpc_serial.h */,
+				5A89D0D62BA153B3006AD8A0 /* erpc_setup_extensions.h */,
+				5A89D0D02BA153B2006AD8A0 /* erpc_threading_freertos.cpp */,
+				5A89D0D12BA153B3006AD8A0 /* erpc_threading_pthreads.cpp */,
+				5A89D0D32BA153B3006AD8A0 /* erpc_threading_threadx.cpp */,
+				5A89D0D22BA153B3006AD8A0 /* erpc_threading_zephyr.cpp */,
+				5A89D0B32BA153A7006AD8A0 /* erpc_basic_codec.cpp */,
+				5A89D0A02BA153A7006AD8A0 /* erpc_basic_codec.hpp */,
+				5A89D0AD2BA153A7006AD8A0 /* erpc_client_manager.cpp */,
+				5A89D0A72BA153A7006AD8A0 /* erpc_client_manager.h */,
+				5A89D0AE2BA153A7006AD8A0 /* erpc_client_server_common.hpp */,
+				5A89D0A22BA153A7006AD8A0 /* erpc_codec.hpp */,
+				5A89D0A32BA153A7006AD8A0 /* erpc_common.h */,
+				5A89D0A82BA153A7006AD8A0 /* erpc_crc16.cpp */,
+				5A89D0992BA153A7006AD8A0 /* erpc_framed_transport.cpp */,
+				5A89D0AA2BA153A7006AD8A0 /* erpc_manually_constructed.hpp */,
+				5A89D0B02BA153A7006AD8A0 /* erpc_message_buffer.cpp */,
+				5A89D0B12BA153A7006AD8A0 /* erpc_message_buffer.hpp */,
+				5A89D09C2BA153A7006AD8A0 /* erpc_message_loggers.cpp */,
+				5A89D0A52BA153A7006AD8A0 /* erpc_message_loggers.hpp */,
+				5A89D09A2BA153A7006AD8A0 /* erpc_pre_post_action.cpp */,
+				5A89D0AF2BA153A7006AD8A0 /* erpc_pre_post_action.h */,
+				5A89D09D2BA153A7006AD8A0 /* erpc_server.cpp */,
+				5A89D09E2BA153A7006AD8A0 /* erpc_server.hpp */,
+				5A89D0A92BA153A7006AD8A0 /* erpc_simple_server.cpp */,
+				5A89D0B22BA153A7006AD8A0 /* erpc_simple_server.hpp */,
+				5A89D0AB2BA153A7006AD8A0 /* erpc_static_queue.hpp */,
+				5A89D0A42BA153A7006AD8A0 /* erpc_transport_arbitrator.cpp */,
+				5A89D0AC2BA153A7006AD8A0 /* erpc_transport_arbitrator.hpp */,
+				5A89D0A62BA153A7006AD8A0 /* erpc_transport.hpp */,
+				5A89D09F2BA153A7006AD8A0 /* erpc_utils.cpp */,
+				5A89D09B2BA153A7006AD8A0 /* erpc_utils.hpp */,
+				5A89D0A12BA153A7006AD8A0 /* erpc_version.h */,
+				5A89D0952BA1525C006AD8A0 /* erpc_crc16.hpp */,
+				5A89D08E2BA150AA006AD8A0 /* erpc_threading.h */,
+				5A89D08C2BA15070006AD8A0 /* erpc_config_internal.h */,
+				5A89D08A2BA1505C006AD8A0 /* erpc_tcp_transport.hpp */,
+				5A89D0882BA1504B006AD8A0 /* erpc_framed_transport.hpp */,
+				5A89D0862BA15036006AD8A0 /* erpc_config.h */,
+				5A3234BB2BA04463003B1C5A /* CPlusTest.cpp */,
+				5A3234BC2BA04463003B1C5A /* CPlusTest.hpp */,
+			);
+			path = eRPC;
+			sourceTree = "<group>";
+		};
+		5A3234B22BA0414F003B1C5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5A3234A02BA0402D003B1C5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A89D0B62BA153A7006AD8A0 /* erpc_utils.hpp in Headers */,
+				5A89D0C62BA153A7006AD8A0 /* erpc_static_queue.hpp in Headers */,
+				5A89D0C02BA153A7006AD8A0 /* erpc_message_loggers.hpp in Headers */,
+				5A89D08B2BA1505C006AD8A0 /* erpc_tcp_transport.hpp in Headers */,
+				5A89D0C92BA153A7006AD8A0 /* erpc_client_server_common.hpp in Headers */,
+				5A89D0EE2BA153BB006AD8A0 /* erpc_transport_setup.h in Headers */,
+				5A89D0C22BA153A7006AD8A0 /* erpc_client_manager.h in Headers */,
+				5A89D08D2BA15070006AD8A0 /* erpc_config_internal.h in Headers */,
+				5A89D0D92BA153B3006AD8A0 /* erpc_endianness_undefined.h in Headers */,
+				5A89D0BE2BA153A7006AD8A0 /* erpc_common.h in Headers */,
+				5A89D0B92BA153A7006AD8A0 /* erpc_server.hpp in Headers */,
+				5A3235DE2BA051E1003B1C5A /* eRPCMacOS-Bridging-Header.h in Headers */,
+				5A89D0BB2BA153A7006AD8A0 /* erpc_basic_codec.hpp in Headers */,
+				5A89D08F2BA150AA006AD8A0 /* erpc_threading.h in Headers */,
+				5A89D0C52BA153A7006AD8A0 /* erpc_manually_constructed.hpp in Headers */,
+				5A89D0962BA1525C006AD8A0 /* erpc_crc16.hpp in Headers */,
+				5A89D0872BA15036006AD8A0 /* erpc_config.h in Headers */,
+				5A3234BE2BA04463003B1C5A /* CPlusTest.hpp in Headers */,
+				5A89D0892BA1504B006AD8A0 /* erpc_framed_transport.hpp in Headers */,
+				5A89D0E22BA153B3006AD8A0 /* erpc_port.h in Headers */,
+				5A89D0F62BA153C5006AD8A0 /* erpc_serial_transport.hpp in Headers */,
+				5A89D0EF2BA153BB006AD8A0 /* erpc_mbf_setup.h in Headers */,
+				5A89D0E02BA153B3006AD8A0 /* erpc_setup_extensions.h in Headers */,
+				5A89D0BD2BA153A7006AD8A0 /* erpc_codec.hpp in Headers */,
+				5A89D0CA2BA153A7006AD8A0 /* erpc_pre_post_action.h in Headers */,
+				5A89D0F02BA153BB006AD8A0 /* erpc_client_setup.h in Headers */,
+				5A89D0CC2BA153A7006AD8A0 /* erpc_message_buffer.hpp in Headers */,
+				5A89D0EC2BA153BB006AD8A0 /* erpc_server_setup.h in Headers */,
+				5A89D0F92BA153C5006AD8A0 /* erpc_inter_thread_buffer_transport.hpp in Headers */,
+				5A89D0C12BA153A7006AD8A0 /* erpc_transport.hpp in Headers */,
+				5A89D0CD2BA153A7006AD8A0 /* erpc_simple_server.hpp in Headers */,
+				5A89D0C72BA153A7006AD8A0 /* erpc_transport_arbitrator.hpp in Headers */,
+				5A89D0BC2BA153A7006AD8A0 /* erpc_version.h in Headers */,
+				5A89D0DF2BA153B3006AD8A0 /* erpc_serial.h in Headers */,
+				5A89D0DE2BA153B3006AD8A0 /* erpc_endianness_agnostic_example.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5A3234712BA0400F003B1C5A /* eRPCMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3234972BA04010003B1C5A /* Build configuration list for PBXNativeTarget "eRPCMacOS" */;
+			buildPhases = (
+				5A32346E2BA0400F003B1C5A /* Sources */,
+				5A32346F2BA0400F003B1C5A /* Frameworks */,
+				5A3234702BA0400F003B1C5A /* Resources */,
+				5A89D0FF2BA153E7006AD8A0 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A89D0FE2BA153E7006AD8A0 /* PBXTargetDependency */,
+			);
+			name = eRPCMacOS;
+			productName = eRPCMacOS;
+			productReference = 5A3234722BA0400F003B1C5A /* eRPCMacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A3234822BA04010003B1C5A /* eRPCMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A32349A2BA04010003B1C5A /* Build configuration list for PBXNativeTarget "eRPCMacOSTests" */;
+			buildPhases = (
+				5A32347F2BA04010003B1C5A /* Sources */,
+				5A3234802BA04010003B1C5A /* Frameworks */,
+				5A3234812BA04010003B1C5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A3234852BA04010003B1C5A /* PBXTargetDependency */,
+			);
+			name = eRPCMacOSTests;
+			productName = eRPCMacOSTests;
+			productReference = 5A3234832BA04010003B1C5A /* eRPCMacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A32348C2BA04010003B1C5A /* eRPCMacOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A32349D2BA04010003B1C5A /* Build configuration list for PBXNativeTarget "eRPCMacOSUITests" */;
+			buildPhases = (
+				5A3234892BA04010003B1C5A /* Sources */,
+				5A32348A2BA04010003B1C5A /* Frameworks */,
+				5A32348B2BA04010003B1C5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A32348F2BA04010003B1C5A /* PBXTargetDependency */,
+			);
+			name = eRPCMacOSUITests;
+			productName = eRPCMacOSUITests;
+			productReference = 5A32348D2BA04010003B1C5A /* eRPCMacOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5A3234A32BA0402D003B1C5A /* eRPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3234AC2BA0402E003B1C5A /* Build configuration list for PBXNativeTarget "eRPC" */;
+			buildPhases = (
+				5A3234A02BA0402D003B1C5A /* Headers */,
+				5A3234A12BA0402D003B1C5A /* Sources */,
+				5A3234A22BA0402D003B1C5A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eRPC;
+			productName = eRPC;
+			productReference = 5A3234A42BA0402E003B1C5A /* libeRPC.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A32346A2BA0400F003B1C5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5A3234712BA0400F003B1C5A = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					5A3234822BA04010003B1C5A = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 5A3234712BA0400F003B1C5A;
+					};
+					5A32348C2BA04010003B1C5A = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 5A3234712BA0400F003B1C5A;
+					};
+					5A3234A32BA0402D003B1C5A = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 5A32346D2BA0400F003B1C5A /* Build configuration list for PBXProject "eRPCMacOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A3234692BA0400F003B1C5A;
+			productRefGroup = 5A3234732BA0400F003B1C5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A3234712BA0400F003B1C5A /* eRPCMacOS */,
+				5A3234822BA04010003B1C5A /* eRPCMacOSTests */,
+				5A32348C2BA04010003B1C5A /* eRPCMacOSUITests */,
+				5A3234A32BA0402D003B1C5A /* eRPC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A3234702BA0400F003B1C5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A32347D2BA04010003B1C5A /* Preview Assets.xcassets in Resources */,
+				5A32347A2BA04010003B1C5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3234812BA04010003B1C5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A32348B2BA04010003B1C5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A32346E2BA0400F003B1C5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3234B02BA04062003B1C5A /* eRPCTrigger.swift in Sources */,
+				5A3234782BA0400F003B1C5A /* ContentView.swift in Sources */,
+				5A3234762BA0400F003B1C5A /* eRPCMacOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A32347F2BA04010003B1C5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3234882BA04010003B1C5A /* eRPCMacOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3234892BA04010003B1C5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3234942BA04010003B1C5A /* eRPCMacOSUITestsLaunchTests.swift in Sources */,
+				5A3234922BA04010003B1C5A /* eRPCMacOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3234A12BA0402D003B1C5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A89D0C82BA153A7006AD8A0 /* erpc_client_manager.cpp in Sources */,
+				5A89D0EA2BA153BB006AD8A0 /* erpc_setup_tcp.cpp in Sources */,
+				5A89D0B52BA153A7006AD8A0 /* erpc_pre_post_action.cpp in Sources */,
+				5A89D0E12BA153B3006AD8A0 /* erpc_serial.cpp in Sources */,
+				5A89D0EB2BA153BB006AD8A0 /* erpc_server_setup.cpp in Sources */,
+				5A89D0B72BA153A7006AD8A0 /* erpc_message_loggers.cpp in Sources */,
+				5A89D0ED2BA153BB006AD8A0 /* erpc_client_setup.cpp in Sources */,
+				5A89D0DB2BA153B3006AD8A0 /* erpc_threading_pthreads.cpp in Sources */,
+				5A89D0FA2BA153C5006AD8A0 /* erpc_serial_transport.cpp in Sources */,
+				5A89D0F82BA153C5006AD8A0 /* erpc_inter_thread_buffer_transport.cpp in Sources */,
+				5A89D0F72BA153C5006AD8A0 /* erpc_tcp_transport.cpp in Sources */,
+				5A89D0BF2BA153A7006AD8A0 /* erpc_transport_arbitrator.cpp in Sources */,
+				5A89D0B42BA153A7006AD8A0 /* erpc_framed_transport.cpp in Sources */,
+				5A89D0CE2BA153A7006AD8A0 /* erpc_basic_codec.cpp in Sources */,
+				5A89D0B82BA153A7006AD8A0 /* erpc_server.cpp in Sources */,
+				5A89D0DA2BA153B3006AD8A0 /* erpc_threading_freertos.cpp in Sources */,
+				5A89D0DD2BA153B3006AD8A0 /* erpc_threading_threadx.cpp in Sources */,
+				5A89D0DC2BA153B3006AD8A0 /* erpc_threading_zephyr.cpp in Sources */,
+				5A3234BD2BA04463003B1C5A /* CPlusTest.cpp in Sources */,
+				5A89D0BA2BA153A7006AD8A0 /* erpc_utils.cpp in Sources */,
+				5A89D0CB2BA153A7006AD8A0 /* erpc_message_buffer.cpp in Sources */,
+				5A89D0C32BA153A7006AD8A0 /* erpc_crc16.cpp in Sources */,
+				5A89D0C42BA153A7006AD8A0 /* erpc_simple_server.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A3234852BA04010003B1C5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A3234712BA0400F003B1C5A /* eRPCMacOS */;
+			targetProxy = 5A3234842BA04010003B1C5A /* PBXContainerItemProxy */;
+		};
+		5A32348F2BA04010003B1C5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A3234712BA0400F003B1C5A /* eRPCMacOS */;
+			targetProxy = 5A32348E2BA04010003B1C5A /* PBXContainerItemProxy */;
+		};
+		5A89D0FE2BA153E7006AD8A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A3234A32BA0402D003B1C5A /* eRPC */;
+			targetProxy = 5A89D0FD2BA153E7006AD8A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5A3234952BA04010003B1C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A3234962BA04010003B1C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		5A3234982BA04010003B1C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = eRPCMacOS/eRPCMacOS.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"eRPCMacOS/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tudz.eRPCMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/eRPCMacOS-Bridging-Header.h";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5A3234992BA04010003B1C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = eRPCMacOS/eRPCMacOS.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"eRPCMacOS/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tudz.eRPCMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/eRPCMacOS-Bridging-Header.h";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5A32349B2BA04010003B1C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tudz.eRPCMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eRPCMacOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/eRPCMacOS";
+			};
+			name = Debug;
+		};
+		5A32349C2BA04010003B1C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tudz.eRPCMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eRPCMacOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/eRPCMacOS";
+			};
+			name = Release;
+		};
+		5A32349E2BA04010003B1C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tudz.eRPCMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = eRPCMacOS;
+			};
+			name = Debug;
+		};
+		5A32349F2BA04010003B1C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tudz.eRPCMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = eRPCMacOS;
+			};
+			name = Release;
+		};
+		5A3234AD2BA0402E003B1C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/eRPC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5A3234AE2BA0402E003B1C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/eRPC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A32346D2BA0400F003B1C5A /* Build configuration list for PBXProject "eRPCMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3234952BA04010003B1C5A /* Debug */,
+				5A3234962BA04010003B1C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3234972BA04010003B1C5A /* Build configuration list for PBXNativeTarget "eRPCMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3234982BA04010003B1C5A /* Debug */,
+				5A3234992BA04010003B1C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A32349A2BA04010003B1C5A /* Build configuration list for PBXNativeTarget "eRPCMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A32349B2BA04010003B1C5A /* Debug */,
+				5A32349C2BA04010003B1C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A32349D2BA04010003B1C5A /* Build configuration list for PBXNativeTarget "eRPCMacOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A32349E2BA04010003B1C5A /* Debug */,
+				5A32349F2BA04010003B1C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3234AC2BA0402E003B1C5A /* Build configuration list for PBXNativeTarget "eRPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3234AD2BA0402E003B1C5A /* Debug */,
+				5A3234AE2BA0402E003B1C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A32346A2BA0400F003B1C5A /* Project object */;
+}
